@@ -20,3 +20,43 @@ If UnityMATRendering contributes to an academic publication, cite it as:
   year = {2023}
 }
 ```
+
+## Results
+
+this addon will import medial axis transform as several objects:
+
+- Medial mesh
+- Medial sphere
+- Medial cone
+- Medial slab
+
+
+| <img src=".\render_results\medial mesh.png" alt="medial mesh" style="zoom:33%;" /> | <img src=".\render_results\sphere.png" alt="sphere" style="zoom:33%;" /> | <img src=".\render_results\cone.png" alt="cone" style="zoom:33%;" /> | <img src=".\render_results\slab.png" alt="slab" style="zoom:33%;" /> | <img src=".\render_results\result.png" alt="result" style="zoom:33%;" /> |
+| :-: | :-: | :-: | :-: | :-: |
+| medial mesh | medial spheres | medial cones | medial slabs | combined |
+
+## Requirements
+
+- Blender 2.80.0 or older
+
+## MA file structure
+
+> /# number of vertex(medial sphere)/edge(medial cone)/face(medial slab)
+>
+> vertices edges faces
+>
+> \# v/e/f indicates the type represented by current line
+>
+> /# (x,y,z): center of the medial sphere; r: radius
+>
+> v x y z r
+>
+> /# two end vertices of the edge
+>
+> e v1 v2
+>
+> /# three vertices of a triangle face
+>
+> f v3 v4 v5
+>
+> \#  comment lines in MA file should start with #
