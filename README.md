@@ -37,7 +37,7 @@ this addon will import medial axis transform as several objects:
 
 ## Requirements
 
-- Blender 2.80.0 or older
+- Tested on Unity 2022.3.9f1
 
 ## MA file structure
 
